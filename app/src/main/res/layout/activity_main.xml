@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a15056158.rockpaperscissors.MainActivity">
+
+    <TextView
+        android:id="@+id/tvHuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human Choice"
+        android:textColor="@android:color/black"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/ivHuman"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/rock" />
+
+    <TextView
+        android:id="@+id/tvComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Choice"
+        android:textColor="@android:color/black"
+        android:textSize="24dp" />
+
+    <ImageView
+        android:id="@+id/ivComp"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/paper" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.19"
+        android:text="Score: Human 0 Computer 0"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Rock"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Paper"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnScissors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Scissors"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
